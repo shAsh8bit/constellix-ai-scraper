@@ -1,6 +1,6 @@
 # Constellix AI Scraper
 
-A powerful Opensource LLM-driven web scraping library that lets you query web pages using natural language.
+A powerful Opensource LLM-driven web scraping library that lets you query and automate web pages using natural language.
 
 ## Installation
 
@@ -61,6 +61,10 @@ run().catch(console.error);
 - Get CSS selectors or XPaths for elements
 - Compatible with Playwright and Puppeteer
 
+## Examples
+[Playwright Examples](https://github.com/shAsh8bit/constellixai-examples/tree/main/examples/playwright)
+
+[Puppeteer Examples](https://github.com/shAsh8bit/constellixai-examples/tree/main/examples/puppeteer)
 ## License
 
 MIT
