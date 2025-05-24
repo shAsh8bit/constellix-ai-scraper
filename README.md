@@ -2,6 +2,11 @@
 
 An open-source web automation and scraping library powered by LLM. Interact with and extract data from websites using natural or structured queries — streamline automation without writing complex code.
 
+## Live 
+Try playground → [https://constellix.vercel.app/](https://constellix.vercel.app/)
+
+
+
 ## Installation
 
 ```bash
