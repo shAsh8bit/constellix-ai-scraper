@@ -1,6 +1,6 @@
 # Constellix AI Scraper
 
-A powerful Opensource LLM-driven web scraping library that lets you query and automate web pages using natural language.
+An open-source web automation and scraping library powered by LLM. Interact with and extract data from websites using natural or structured queries — streamline automation without writing complex code.
 
 ## Installation
 
