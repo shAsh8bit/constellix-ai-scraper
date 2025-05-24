@@ -36,6 +36,17 @@ async function run() {
   // Find elements using natural language
   const loginButton = await page.getElementsByQuery("Find the login button");
   await loginButton.click();
+
+  //Automate logging using credentials
+  const loginFormQuery = `{
+    username_input_field,
+    password_input_field,
+    submit_btn
+  }`
+  const form = await page.getElementsByQuery(loginFormQuery);
+  await form.username_input_field.fill("shashank");
+  await form.password_input_field.fill("123@s&$NND");
+  await form.submit_btn.click();
   
   // Extract structured data
   const productsQuery = `{
