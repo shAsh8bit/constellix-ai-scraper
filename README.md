@@ -41,7 +41,7 @@ async function run() {
 
   //Your own custom Query
   const loginFormQuery = `{
-    username_input_field(Get me the input field for username or email),
+    username_input_field (Get me the input field for username or email),
     password_input_field,
     submit_btn
   }`
