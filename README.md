@@ -38,11 +38,14 @@ async function run() {
   await loginButton.click();
 
   //Automate logging using credentials
+
+  //Your own custom Query
   const loginFormQuery = `{
-    username_input_field,
+    username_input_field(Get me the input field for username or email),
     password_input_field,
     submit_btn
   }`
+
   const form = await page.getElementsByQuery(loginFormQuery);
   await form.username_input_field.fill("shashank");
   await form.password_input_field.fill("123@s&$NND");
@@ -56,6 +59,7 @@ async function run() {
       description
     }
   }`;
+
   const products = await page.getDataByQuery(productsQuery);
   console.log(products);
   
