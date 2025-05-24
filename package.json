@@ -1,0 +1,42 @@
+{
+  "name": "@constellix/ai-scraper",
+  "version": "0.1.3",
+  "description": "Wrapper for LLM-driven element queries.",
+  "keywords": [
+    "ai scraper",
+    "web scraping",
+    "ai crawler",
+    "ai",
+    "web automation"
+  ],
+  "author": "Shashank Gupta <shashankrg.2710@gmail.com>",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shAsh8bit/constellix-ai-scraper.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "dependencies": {
+    "axios": "^1.9.0",
+    "html-minifier-terser": "^7.2.0",
+    "playwright-dompath": "^0.0.7",
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/html-minifier-terser": "^7.0.2",
+    "@types/turndown": "^5.0.5",
+    "typescript": "^5.8.3"
+  }
+}
