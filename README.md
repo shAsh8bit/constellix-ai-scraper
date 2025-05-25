@@ -6,7 +6,6 @@ An open-source web automation and scraping library powered by LLM. Interact with
 Try playground → [https://constellix.vercel.app/](https://constellix.vercel.app/)
 
 
-
 ## Installation
 
 ```bash
@@ -39,13 +38,12 @@ async function run() {
 
   //Automate logging using credentials
 
-  //Your own custom Query
+  //Define your own custom query
   const loginFormQuery = `{
-    username_input_field (Get me the input field for username or email),
+    username_input_field,
     password_input_field,
     submit_btn
   }`
-
   const form = await page.getElementsByQuery(loginFormQuery);
   await form.username_input_field.fill("shashank");
   await form.password_input_field.fill("123@s&$NND");
@@ -82,8 +80,7 @@ run().catch(console.error);
 - Compatible with Playwright and Puppeteer
 
 ## Examples
-[Playwright Examples](https://github.com/shAsh8bit/constellixai-examples/tree/main/examples/playwright)
-
+[Playwright Examples](https://github.com/shAsh8bit/constellixai-examples/tree/main/examples/playwright)<br>
 [Puppeteer Examples](https://github.com/shAsh8bit/constellixai-examples/tree/main/examples/puppeteer)
 ## License
 
